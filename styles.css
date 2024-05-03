@@ -1,0 +1,111 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+  
+header {
+    background-color: #000000d7;
+    color: #fff;
+    text-align: left;
+    padding: 20px 0;
+    padding-left: 20px;
+    background-size: cover;
+    background-position: center;
+ }
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+  
+.about .store-image {
+    flex: 0 0 40%;
+}
+  
+.about .store-image img {
+    width: 100%;
+    height: auto;
+}
+  
+.about .store-info {
+    flex: 0 0 50%;
+}
+.title{
+    padding-left: 43%;
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    background-color:#333;
+    color:aliceblue
+}
+  
+.product {
+    flex: 0 0 33%;
+    margin-bottom: 10px;
+    text-align: left;
+}
+  
+.product img {
+    width: 100%;
+    height: auto;
+}
+  
+button {
+    background-color: #5f0d0d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer ;
+    border-radius: 15%;
+}
+  
+button:hover {
+    background-color: #555;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        background-image: url('mobile-background.jpg'); /* Adicione o caminho da imagem para dispositivos móveis */
+    }
+    
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .product {
+        width: 80%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .product img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .product h3 {
+        margin-top: 10px;
+    }
+    
+    .product p {
+        margin-bottom: 10px;
+    }
+    
+    .product button {
+        margin-top: 10px;
+    }
+    
+    .arrow {
+        display: none;
+    }
+}
+
+/* Estilos para desktop */
+@media screen and (min-width: 769px) {
+    header {
+        background-image: url('desktop-background.jpg');
